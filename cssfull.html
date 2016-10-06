@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Web Page</title>
+</head>
+<style>
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+
+
+<h1>My First CSS Example</h1>
+<p>This is a paragraph.</p>
+
+
+<hr>
+
+<style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+</style>
+
+
+<h2>The border-style Property</h2>
+<p>This property specifies what kind of border to display:</p>
+
+<p class="dotted">A dotted border.</p>
+<p class="dashed">A dashed border.</p>
+<p class="solid">A solid border.</p>
+<p class="none">No border.</p>
+<p class="hidden">A hidden border.</p>
+<p class="mix">A mixed border.</p>
+<hr>
+<style>
+p.one {
+    border-style: solid;
+    border-width: 5px;
+}
+
+p.two {
+    border-style: solid;
+    border-width: medium;
+}
+
+p.three {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+p.four {
+    border-style: dotted;
+    border-width: thick;
+}
+
+p.five {
+    border-style: double;
+    border-width: 15px;
+}
+
+p.six {
+    border-style: double;
+    border-width: thick;
+}
+
+p.seven {
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}
+</style>
+
+<h2>The border-width Property</h2>
+<p>This property specifies the width of the four borders:</p>
+
+<p class="one">Some text.</p>
+<p class="two">Some text.</p>
+<p class="three">Some text.</p>
+<p class="four">Some text.</p>
+<p class="five">Some text.</p>
+<p class="six">Some text.</p>
+<p class="seven">Some text.</p>
+
+<p><b>Note:</b> The "border-width" property does not work if it is used alone.
+Always specify the "border-style" property to set the borders first.</p>
+<hr>
+
+
+<style>
+p.one1 {
+    border-style: solid;
+    border-color: red;
+}
+
+p.two2 {
+    border-style: solid;
+    border-color: green;
+}
+
+p.three3 {
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+</style>
+
+<h2>The border-color Property</h2>
+<p>This property specifies the color of the four borders:</p>
+
+<p class="one1">A solid red border</p>
+<p class="two2">A solid green border</p>
+<p class="three3">A solid multicolor border</p>
+<p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+
+<hr>
+<style>
+div.maxWidth {
+    max-width: 500px;
+    height: 100px;
+    background-color: powderblue;
+}
+</style>
+
+
+<h2>Set the max-width of an element</h2>
+<p>This div element has a height of 100px and a max-width of 500px:</p>
+
+<div class="maxWidth"></div>
+
+<p>Resize the browser window to see the effect.</p>
+
+
+<hr>
+<style>
+div.widthP {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+}
+</style>
+</head>
+<body>
+
+<h2>Set the height and width of an element</h2>
+
+<p>This div element has a height of 200px and a width of 50%:</p>
+
+<div class="widthP"></div>
+
+<hr>
+<style>
+div.padding {
+    border: 1px solid black;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
+</style>
+
+
+<h2>Using individual padding properties</h2>
+
+<div class="padding">This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+
+
+<hr>
+<style>
+div.margin1 {
+    border: 1px solid black;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    background-color: lightblue;
+}
+</style>
+
+
+<h2>Using individual margin properties</h2>
+
+<div class="margin1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+<hr>
+<style>
+a:link {
+    background-color: yellow;
+}
+
+a:visited {
+    background-color: cyan;
+}
+
+a:hover {
+    background-color: lightgreen;
+}
+
+a:active {
+    background-color: hotpink;
+}
+</style>
+
+
+<p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+
+<hr>
+<style>
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS font-family</h1>
+<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+<hr>
+<style>
+p.uppercase {
+    text-transform: uppercase;
+}
+
+p.lowercase {
+    text-transform: lowercase;
+}
+
+p.capitalize {
+    text-transform: capitalize;
+}
+</style>
+
+
+<p class="uppercase">This is some text uppercase.</p>
+<p class="lowercase">This is some text lowercase.</p>
+<p class="capitalize">This is some text capitalize.</p>
+
+
+
+<hr>
+<style>
+p {border: 1px solid black;}
+
+p.one12 {
+    outline-style: double;
+    outline-color: red;
+    outline-width: thick;
+}
+
+p.two12 {
+    outline-style: double;
+    outline-color: green;
+    outline-width: 3px;
+}
+</style>
+
+
+<h2>The outline-width Property</h2>
+
+<p class="one12">This is some text.</p>
+<p class="two12">This is some text.</p>
+
+<hr>
+<style>
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+}
+</style>
+
+
+<a href="default.asp" target="_blank">This is a link</a>
+
+<hr>
+<style>
+ul.a {
+    list-style-type: circle;
+}
+
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: upper-roman;
+}
+
+ol.d {
+    list-style-type: lower-alpha;
+}
+</style>
+
+<p>Example of unordered lists:</p>
+<ul class="a">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<ul class="b">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ul>
+
+<p>Example of ordered lists:</p>
+<ol class="c">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<ol class="d">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+</ol>
+
+<hr>
+<style>
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+
+
+<h2>Add a border to a table:</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+<hr>
+<style>
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+</style>
+
+<h2>position: static;</h2>
+
+<p>An element with position: static; is not positioned in any special way; it is
+always positioned according to the normal flow of the page:</p>
+
+<div class="static">
+This div element has position: static;
+</div>
+
+
+<hr>
+<style>
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+</style>
+
+
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative">
+This div element has position: relative;
+</div>
+
+<hr>
+<style>
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+</style>
+
+
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed;
+</div>
+
+<hr>
+<style>
+div.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #73AD21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+</style>
+
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;</div>
+</div>
+<hr>
+<style>
+div.of{
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: hidden;
+}
+</style>
+
+
+<h2>CSS Overflow</h2>
+<p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+<p>Try to remove the overflow property to understand how it works.</p>
+
+<div class = "of">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+<hr>
+<style>
+div.ofl {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+	margin-bottom: 100px;
+    border: 1px dotted black;
+    overflow: visible;
+}
+</style>
+
+
+<h2>CSS Overflow</h2>
+<p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+<div class="ofl">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+
+<hr>
+<style>
+div.ofs {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Overflow</h2>
+<p>Setting the overflow value to scroll, the overflow is clipped and a scrollbar is added to scroll inside the box. Note that this will add a scrollbar both horizontally and vertically (even if you do not need it):</p>
+
+<div class="ofs">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+<hr>
+
+<style>
+div.ofa {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow: auto;
+}
+</style>
+
+
+<h2>CSS Overflow</h2>
+<p>The auto value is similar to scroll, only it add scrollbars when necessary:</p>
+
+<div class = "ofa">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+
+<hr>
+<style>
+div.ofax {
+    background-color: #eee;
+    width: 200px;
+    height: 50px;
+    border: 1px dotted black;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+</style>
+
+
+<h2>CSS Overflow</h2>
+<p>You can also change the overflow of content horizontally or vertically.</p>
+<p>overflow-x specifies what to do with the left/right edges of the content.<br>
+overflow-y specifies what to do with the top/bottom edges of the content.</p>
+
+<div class="ofax">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+<hr>
+<style>
+.div1 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div2 {
+    border: 1px solid red;
+}
+
+
+.div3 {
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.div4 {
+    border: 1px solid red;
+    clear: left;
+}
+</style>
+
+
+<h2>Without clear</h2>
+<div class="div1">div1</div>
+<div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.</div>
+
+<h2>Using clear</h2>
+<div class="div3">div3</div>
+<div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+<hr>
+<style>
+.floating-box {
+    display: inline-block;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+
+
+
+
+
+.after-box {
+    border: 3px solid red;
+}
+</style>
+
+
+<h2>The New Way - using inline-block</h2>
+
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+
+<div class="after-box">Another box, after the floating boxes...</div>
+<hr>
+<style>
+.floating-box {
+    float: left;
+    width: 150px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+.after-box {
+    clear: left;
+    border: 3px solid red;
+}
+</style>
+
+
+<h2>The Old Way - using float</h2>
+
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+<div class="floating-box">Floating box</div>
+
+<div class="after-box">Another box, after the floating boxes...</div>
+
+<hr>
+
+<style>
+img {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+</style>
+
+
+<p>In this example, the image will float to the right in the paragraph, and the text in the paragraph will wrap around the image.</p>
+
+<p><img src="https://www.plexusmd.com/Images/logo/plexusmd_black.png" alt="W3Schools.com" width="126" height="48">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+
+
+<hr>
+
+<style>
+div {
+    border: 3px solid blue;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+nav {
+    float: left;
+    width: 200px;
+    border: 3px solid #73AD21;
+}
+
+section {
+    margin-left: 206px;
+    border: 3px solid red;
+}
+</style>
+
+<div class="clearfix">
+
+<nav>
+  <span>nav</span>
+    <ul>
+      <li><a target="_blank" href="/default.asp">Home</a></li>
+      <li><a target="_blank" href="default.asp">CSS</a></li>
+      <li><a target="_blank" href="/html/default.asp">HTML</a></li>
+      <li><a target="_blank" href="/js/default.asp">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <span>section</span>
+    <p>Notice we have put a clearfix on the div container. It is not needed in this example, but it would be if the nav element was longer than the non-floated section content.</p>
+  </section>
+
+  <section>
+    <span>section</span>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.</p>
+  </section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
