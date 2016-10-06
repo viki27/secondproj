@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="p1">Please locate where 'locate' occurs!.</p>
+
+<button onclick="myFunction()">first locate</button>
+<button onclick="myFunction1()">last locate</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("p1").innerHTML;
+    var pos = str.indexOf("locate");
+document.getElementById("demo").innerHTML = pos;
+
+
+}
+function myFunction1(){
+  var str = document.getElementById("p1").innerHTML;
+var pos1 = str.lastIndexOf("locate");
+    
+    document.getElementById("demo1").innerHTML = pos1;}
+</script>
+<br><br><a href="stringslice.html" target="_blank">Next</a>
+
+</body>
+</html>
+
+
